@@ -1,0 +1,69 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "~/.openclaw/workspace",
+      "models": {
+        "opencode/deepseek-v4-flash-free": {
+          "alias": "DeepSeek V4 Flash"
+        }
+      },
+      "model": {
+        "primary": "opencode/deepseek-v4-flash-free"
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": ""
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "plugins": {
+    "entries": {
+      "opencode": {
+        "enabled": true
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "opencode:default": {
+        "provider": "opencode",
+        "mode": "api_key"
+      },
+      "opencode-go:default": {
+        "provider": "opencode-go",
+        "mode": "api_key"
+      }
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "team-orchestrator": {
+        "enabled": true
+      },
+      "data-viz": {
+        "enabled": true
+      },
+      "knowledge-base": {
+        "enabled": true
+      }
+    }
+  }
+}
