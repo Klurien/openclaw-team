@@ -1,0 +1,6 @@
+# Config with API keys
+config/openclaw.json
+# .bak files
+*.bak
+# node_modules
+node_modules/
