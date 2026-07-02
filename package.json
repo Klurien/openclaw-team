@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-team",
+  "version": "1.0.0",
+  "description": "OpenClaw Agent Team Orchestration — Software engineering team of AI agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "bash setup.sh",
+    "chat": "openclaw chat",
+    "status": "openclaw status",
+    "infer": "openclaw infer",
+    "backup": "bash ~/.npm-global/lib/node_modules/openclaw/scripts/backup-db.sh 2>/dev/null || echo 'backup script not found'"
+  },
+  "dependencies": {
+    "openclaw": "^2026.6.1"
+  }
+}

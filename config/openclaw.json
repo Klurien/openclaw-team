@@ -1,0 +1,11 @@
+{
+  "provider": {
+    "opencode-zen": {
+      "options": {
+        "apiKey": "",
+        "baseURL": "https://api.opencode.ai/v1"
+      }
+    }
+  },
+  "model": "opencode/deepseek-v4-flash-free"
+}
